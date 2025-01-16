@@ -11,14 +11,14 @@ import paquete01.Operador;
 public class Principal {
     
     public static void main(String[] args) {
-        int valorA = Operador.obtenerNumero();
+        int valorA = Operador.obtenerNumero(); 
         int valorB = Operador.obtenerNumero();
-        int suma = Operador.obtenerSuma();
+        int suma = Operador.obtenerSuma(valorA, valorB); 
 
-        
-        Operador.presentarDatos(valorA,valorB, suma);
+        Operador.presentarDatos(valorA, valorB, suma); 
     }
-    public static void presentarDatos(int a , int b , int c){
+
+    public static void presentarDatos(int a , int b , int c) {
         System.out.printf("La suma de %d + %d es igual a: %d\n", 
                 a,
                 b,
