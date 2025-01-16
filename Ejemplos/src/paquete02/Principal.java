@@ -18,5 +18,13 @@ public class Principal {
                 valorA,
                 valorB,
                 suma);
+        
+        Operador.presentarDatos(valorA,valorB, suma);
+    }
+    public static void presentarDatos(int a , int b , int c){
+        System.out.printf("La suma de %d + %d es igual a: %d\n", 
+                a,
+                b,
+                c);
     }
 }

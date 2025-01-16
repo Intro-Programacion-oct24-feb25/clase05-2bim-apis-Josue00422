@@ -18,10 +18,20 @@ public class Operador {
         // between 0 (inclusive) and the specified value (exclusive)
         int valorAleatorio = numerosAleatorios.nextInt(5);
         return valorAleatorio;
+       
     }
     
-    public static int obtenerSuma(int a, int b){
+    
+    public static int obtenerSuma(int a, int b , int c){
         return a + b;
+    }
+    Operador.presentarDatos(valorA,valorB, suma);
+     
+      public static void presentarDatos(int a , int b , int c){
+        System.out.printf("La suma de %d + %d es igual a: %d\n", 
+                a,
+                b,
+                c);
     }
     
 }
