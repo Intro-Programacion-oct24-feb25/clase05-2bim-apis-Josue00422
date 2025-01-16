@@ -13,11 +13,8 @@ public class Principal {
     public static void main(String[] args) {
         int valorA = Operador.obtenerNumero();
         int valorB = Operador.obtenerNumero();
-        int suma = Operador.obtenerSuma(valorA, valorB);
-        System.out.printf("La suma de %d + %d es igual a: %d\n", 
-                valorA,
-                valorB,
-                suma);
+        int suma = Operador.obtenerSuma();
+
         
         Operador.presentarDatos(valorA,valorB, suma);
     }
