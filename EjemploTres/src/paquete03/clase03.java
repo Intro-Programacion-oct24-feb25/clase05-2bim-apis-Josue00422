@@ -18,19 +18,19 @@ public class clase03 {
     public static void main(String[] args) {
         
        
-        String[] datoInicial = {"100", "90", "1n", "10", "H1", "H2"};
+        String[] dato = {"100", "90", "1n", "10", "H1", "H2"};
         
         
-        int[] datoFinal = new int[datoInicial.length];
+        int[] resultado = new int[dato.length];
         
       
-        for (int i = 0; i < datoInicial.length; i++) {
+        for (int i = 0; i < dato.length; i++) {
        
-            datoFinal[i] = NumberUtils.toInt(datoInicial[i], 0);
+            resultado[i] = NumberUtils.toInt(dato[i], 0);
         }
         
      
-        for (int valor : datoFinal) {
+        for (int valor : resultado) {
             System.out.print(valor + " ");
         }
     }
